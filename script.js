@@ -19,12 +19,12 @@ for (let i = 0; i < wihtoutArticles.length; i++) {
     finalResult.push(map[wihtoutArticles[i]]);
 }    
 console.log(finalResult);
-//get the ul element by id
-let ul = document.getElementById('band');
+// //get the ul element by id
+// let ul = document.getElementById('band');
 
-//create li elements and add band names to the list
-finalResult.forEach((name)=>{
-	let li = document.createElement('li');
-	li.textContent = name;
-	ul.appendChild(li);
-});
+// //create li elements and add band names to the list
+// finalResult.forEach((name)=>{
+// 	let li = document.createElement('li');
+// 	li.textContent = name;
+// 	ul.appendChild(li);
+// });
