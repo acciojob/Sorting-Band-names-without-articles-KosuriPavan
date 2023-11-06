@@ -1,12 +1,24 @@
 let bandNames=['The Rolling Stones','Aerosmith','Led Zeppelin', 'Pink Floyd','The Who'];
 
-//funtion to remove articles from bandNames
-function removeArticlaes(name){
-	return name.replace(/^(a |an | the)/i,'').trim();
+let wihtoutArticles = [];
+let map = {};
+for (let i = 0; i < bandNames.length; i++) {
+    let str = bandNames[i];
+    str = str.replace(/\ban\b|\ba\b|\bthe\b/gi, '');
+    str = str.replace(/ +/gi, ' ').trim();
+    map[str] = bandNames[i];
+    wihtoutArticles.push(str);
 }
-//sort the array of bandNames excluding articles
-bandNames.sort((a,b)=>removeArticlaes(a).localeCompare(removeArticlaes(b)));
+// console.log(map);
+// console.log(bandNames);
+wihtoutArticles.sort()
+// console.log(wihtoutArticles);
+let finalResult = [];
+for (let i = 0; i < wihtoutArticles.length; i++) {
 
+    finalResult.push(map[wihtoutArticles[i]]);
+}    
+console.log(finalResult);
 //get the ul element by id
 let ul = document.getElementById('band');
 
