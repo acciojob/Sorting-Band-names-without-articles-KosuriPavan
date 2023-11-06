@@ -23,7 +23,7 @@ console.log(finalResult);
 let ul = document.getElementById('band');
 
 //create li elements and add band names to the list
-bandNames.forEach((name)=>{
+finalResult.forEach((name)=>{
 	let li = document.createElement('li');
 	li.textContent = name;
 	ul.appendChild(li);
