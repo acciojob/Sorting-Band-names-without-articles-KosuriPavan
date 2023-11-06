@@ -18,7 +18,8 @@ for (let i = 0; i < wihtoutArticles.length; i++) {
 
     finalResult.push(map[wihtoutArticles[i]]);
 }    
-console.log(finalResult);
+bandNames=finalResult;
+console.log(bandNames);
 // //get the ul element by id
 // let ul = document.getElementById('band');
 
